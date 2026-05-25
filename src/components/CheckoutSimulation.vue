@@ -52,11 +52,11 @@
           <div class="grid grid-cols-2 gap-4">
              <div class="space-y-1">
               <label class="text-xs font-bold text-gray-500">Son Kullanma</label>
-              <input v-model="expiryDate" type="text" class="w-full border border-gray-300 bg-main rounded-lg py-3 px-4 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-gray-900 font-medium" placeholder="AA/YY" maxlength="5" />
+              <input :value="expiryDate" @input="handleExpiryInput" type="text" class="w-full border border-gray-300 bg-main rounded-lg py-3 px-4 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-gray-900 font-medium" placeholder="AA/YY" maxlength="5" />
             </div>
              <div class="space-y-1">
               <label class="text-xs font-bold text-gray-500">CVC</label>
-              <input v-model="cvv" type="text" class="w-full border border-gray-300 bg-main rounded-lg py-3 px-4 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-gray-900 font-medium" placeholder="000" maxlength="3" />
+              <input :value="cvv" @input="handleCvvInput" type="text" class="w-full border border-gray-300 bg-main rounded-lg py-3 px-4 focus:ring-2 focus:ring-blue-500 outline-none transition-all text-gray-900 font-medium" placeholder="000" maxlength="3" />
             </div>
           </div>
         </div>
@@ -159,15 +159,31 @@ const handleCardInput = (e: Event) => {
   // Format 4-4-4-4
   const parts = value.match(/.{1,4}/g)
   cardNumber.value = parts ? parts.join(' ') : value
+  input.value = cardNumber.value
 }
 
-// Simple dash for expiry
-watch(expiryDate, (newVal) => {
+const handleExpiryInput = (e: Event) => {
   error.value = ''
-  if (newVal.length === 2 && !newVal.includes('/')) {
-    expiryDate.value = newVal + '/'
+  const input = e.target as HTMLInputElement
+  let value = input.value.replace(/\D/g, '')
+  if (value.length > 4) value = value.slice(0, 4)
+  
+  if (value.length > 2) {
+    expiryDate.value = value.slice(0, 2) + '/' + value.slice(2)
+  } else {
+    expiryDate.value = value
   }
-})
+  input.value = expiryDate.value
+}
+
+const handleCvvInput = (e: Event) => {
+  error.value = ''
+  const input = e.target as HTMLInputElement
+  let value = input.value.replace(/\D/g, '')
+  if (value.length > 3) value = value.slice(0, 3)
+  cvv.value = value
+  input.value = value
+}
 
 const simulatePayment = () => {
   if (!cardHolder.value || cardNumber.value.length < 19 || expiryDate.value.length < 5 || cvv.value.length < 3) {
