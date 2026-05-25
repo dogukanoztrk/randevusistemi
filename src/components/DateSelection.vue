@@ -505,13 +505,19 @@ const calendarDays = computed(() => {
   const companySettings = company?.settings || businessSettings.value
   const closedDays = companySettings.closedDays || []
 
-  return eachDayOfInterval({ start, end }).map(date => ({
-    date,
-    isCurrentMonth: isSameMonth(date, currentDisplayDate.value),
-    isSelected: selectedDate.value ? isSameDay(date, selectedDate.value) : false,
-    isToday: isSameDay(date, new Date()),
-    isClosed: closedDays.includes(date.getDay())
-  }))
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+
+  return eachDayOfInterval({ start, end }).map(date => {
+    const isPast = date < today
+    return {
+      date,
+      isCurrentMonth: isSameMonth(date, currentDisplayDate.value),
+      isSelected: selectedDate.value ? isSameDay(date, selectedDate.value) : false,
+      isToday: isSameDay(date, new Date()),
+      isClosed: closedDays.includes(date.getDay()) || isPast
+    }
+  })
 })
 
 const prevMonth = () => currentDisplayDate.value = subMonths(currentDisplayDate.value, 1)
