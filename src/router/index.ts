@@ -4,6 +4,8 @@ import Settings from '../components/Settings.vue'
 import MyAppointments from '../components/MyAppointments.vue'
 import AuthPage from '../components/AuthPage.vue'
 import StaffDashboard from '../components/StaffDashboard.vue'
+import Terms from '../components/Terms.vue'
+import Privacy from '../components/Privacy.vue'
 
 const routes = [
     {
@@ -30,6 +32,16 @@ const routes = [
         path: '/staff',
         name: 'Staff',
         component: StaffDashboard
+    },
+    {
+        path: '/terms',
+        name: 'Terms',
+        component: Terms
+    },
+    {
+        path: '/privacy',
+        name: 'Privacy',
+        component: Privacy
     }
 ]
 

@@ -556,7 +556,11 @@ const confirmBooking = () => {
   if (user && user.name && user.phone) {
     handleConfirm({ name: user.name, phone: user.phone })
   } else {
-    isModalOpen.value = true
+    store.triggerAuthOverlay('Lütfen randevu almak için giriş yapın.', 'loading')
+    setTimeout(() => {
+      store.authOverlay.visible = false
+      router.push('/auth')
+    }, 1500)
   }
 }
 

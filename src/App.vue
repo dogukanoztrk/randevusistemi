@@ -3,7 +3,7 @@ import { RouterView, useRouter } from 'vue-router'
 import { useAppointmentStore } from '@/stores/appointment'
 import Toast from '@/components/Toast.vue'
 import { onMounted, computed, ref } from 'vue'
-import { User, LogOut, Menu, X, Loader2, CheckCircle2, Sun, Moon, Download } from 'lucide-vue-next'
+import { User, LogOut, Menu as MenuIcon, X, Loader2, CheckCircle2, Sun, Moon, Download } from 'lucide-vue-next'
 
 const store = useAppointmentStore()
 const router = useRouter()
@@ -152,7 +152,7 @@ const logoutCustomer = async () => {
             <Moon v-else class="w-5 h-5" />
           </button>
           <button class="p-2 text-main/50 hover:text-main transition-colors">
-            <Menu class="w-6 h-6" />
+            <MenuIcon class="w-6 h-6" />
           </button>
         </div>
       </div>
@@ -170,14 +170,14 @@ const logoutCustomer = async () => {
     <!-- Simple Footer -->
     <footer class="py-12 border-t border-main/10 bg-surface relative z-10">
       <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="flex items-center gap-3 opacity-50">
+        <router-link to="/" class="flex items-center gap-3 opacity-50 hover:opacity-100 transition-opacity">
           <div class="w-8 h-8 bg-surface-elevated border border-main/10 rounded-lg flex items-center justify-center text-[#C5A059] font-black text-lg">D</div>
           <span class="font-heading font-black text-xl tracking-[0.2em] text-main">DiTA</span>
-        </div>
+        </router-link>
         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-main/30">© 2026 DiTA Appointment Platform. All rights reserved.</p>
         <div class="flex gap-6">
-          <a href="#" class="text-[9px] font-black uppercase tracking-widest text-main/30 hover:text-main/60 transition-colors">Kullanım Koşulları</a>
-          <a href="#" class="text-[9px] font-black uppercase tracking-widest text-main/30 hover:text-main/60 transition-colors">Gizlilik Politikası</a>
+          <router-link to="/terms" class="text-[9px] font-black uppercase tracking-widest text-main/30 hover:text-main/60 transition-colors">Kullanım Koşulları</router-link>
+          <router-link to="/privacy" class="text-[9px] font-black uppercase tracking-widest text-main/30 hover:text-main/60 transition-colors">Gizlilik Politikası</router-link>
         </div>
       </div>
     </footer>
