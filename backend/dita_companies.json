@@ -1,0 +1,427 @@
+[
+    {
+        "id": "inkart",
+        "sector_id": "tattoo",
+        "name": "Ink Art Studio",
+        "rating": 4.8,
+        "dashboard_code": "INK001",
+        "dashboard_password_hash": "c35032f952fef7f125ad003ae901dec78344f81e40c156a55ffdc3c3b617e60a",
+        "brand_color": "#ffffff",
+        "logo_url": "📱 1. Kullanıcı Deneyimi ve Arayüz (Frontend / UX) PWA (Progressive Web App) Desteği: Müşterilerin uygulamayı App Store veya Google Play'e ihtiyaç duymadan, doğrudan tarayıcı üzerinden telefonlarına \"Uygulama\" olarak indirebilmesini sağlayabiliriz (vite-plugin-pwa ile). Bu, sıfır maliyetle mobil uygulama hissiyatı verir. Çoklu Dil Desteği (i18n): Sistemin Türkçe dışında İngilizce veya diğer dillerde de çalışabilmesi için altyapı (vue-i18n). Gelişmiş SEO ve Meta Etiketleri: Sitenin Google aramalarında veya WhatsApp/Twitter gibi yerlerde linki paylaşıldığında logolu, güzel başlıklı bir önizleme (OpenGraph etiketleri) ile çıkması. Karanlık/Aydınlık Tema (Dark/Light Mode) Switcher: Tailwind altyapınız var, kullanıcıların ve adminlerin kendi tercihlerine göre temayı değiştirebilmesi arayüzü çok daha premium hissettirecektir. .ICS Takvim Çıktısı: Müşteri randevu aldığında hiçbir API maliyeti olmadan ona bir .ics dosyası veya butonu sunabiliriz. Tıkladığında randevu otomatik olarak telefonunun (Google/Apple) takvimine eklenir. 🔒 2. Güvenlik ve Backend İyileştirmeleri Rate Limiting (İstek Sınırlandırma): Kötü niyetli kişilerin giriş sayfasına (brute-force) veya randevu oluşturma sistemine saniyede yüzlerce istek atmasını engellemek için FastAPI tarafında slowapi ile IP bazlı hız sınırlandırması eklenebilir. Alembic ile Veritabanı Migrasyon Sistemi: Şu an tablo yapılarında manuel veya başlangıç scriptleri (check_db.py) ile güncellemeler yapılıyor. SQLAlchemy'nin resmi aracı olan Alembic'i kurarak, veritabanına yeni bir kolon ekleyeceğimizde bunun kontrollü ve versiyonlu olmasını (migration) sağlayabiliriz. Loglama ve Hata Takibi (Sentry & Loguru): frontend_logs.txt gibi düz metin dosyaları yerine, backend tarafında loguru ile renkli/kategorize loglama yapabiliriz. Ayrıca Sentry'nin ücretsiz sürümünü bağlayarak, canlıda bir müşteri hata aldığında anında Telegram veya Discord'dan size bildirim gelmesini sağlayabiliriz. ✉️ 3. İletişim ve Bildirimler (Sıfır Maliyetli) E-posta Bildirimleri: Randevu onay, iptal ve şifre sıfırlama maillerini tamamen ücretsiz gönderebiliriz. Ücretsiz bir Gmail hesabı (App Password ile) veya Resend/Brevo/SendGrid'in ücretsiz katmanlarını (günde 100-300 bedava mail) FastAPI arkaplan görevleri (BackgroundTasks) ile entegre edebiliriz. Ücretsiz WhatsApp Entegrasyonu (Manuel ama Etkili): Twilio veya Meta API'lerine para ödememek için, admin panelindeki randevuların yanına bir \"WhatsApp'tan Hatırlat\" butonu koyabiliriz. Tıklandığında wa.me/905xxxxxxxxx?text=Merhaba, randevunuz... linkiyle personelin WhatsApp Web'ini otomatik açıp mesajı hazır hale getirebiliriz. 🛠️ 4. Geliştirici Araçları ve DevOps Otomatik Testler (Unit / Integration Tests): Sistemin bir yerini güncellediğinizde başka bir yerin bozulmadığından emin olmak için Backend için pytest, Frontend için vitest ile temel testler yazabiliriz. CI/CD Pipeline (GitHub Actions / GitLab CI): Kodunuzu her pushladığınızda arka planda otomatik olarak testlerin çalışması ve hatta Docker imajlarının yeniden oluşturulması (bedava). Kod Standartları (Linter & Formatter): Frontend için ESLint + Prettier, Backend için Ruff veya Black kurarak kodun her zaman temiz ve okunabilir standartlarda kalmasını sağlayabiliriz. 💼 5. Ücretsiz İş Mantığı (Business) Özellikleri Excel/CSV Dışa Aktarma: Admin ve Personellerin aylık randevu veya kazanç raporlarını tek tıkla .csv veya .xlsx olarak bilgisayarlarına indirebilmesi. Python tarafında standart kütüphaneler ile sıfır maliyetle yapılabilir. Rol Bazlı Daha İnce Yetkilendirme (RBAC): Sadece \"Admin\" ve \"Customer\" yerine; \"Süper Admin\" (sistemin sahibi), \"Şube Yöneticisi\" (sadece kendi şubesini görür), \"Personel\" ve \"Müşteri\" şeklinde daha kompleks, gerçek bir SaaS hiyerarşisi kurulabilir. Hizmet/Performans Raporları (PDF): Python ReportLab veya HTML-to-PDF araçları ile müşterilere veya şirket sahiplerine otomatik haftalık performans PDF'leri üretilebilir.",
+        "settings": {
+            "startTime": "09:00",
+            "endTime": "19:00",
+            "intervalMinutes": 60,
+            "closedDays": [
+                0
+            ],
+            "breakStartTime": "12:00",
+            "breakEndTime": "13:00",
+            "hasBreak": true
+        },
+        "services": [
+            {
+                "id": 1,
+                "name": "Mini Dövme",
+                "category": "Dövme Uygulamaları",
+                "price": 233,
+                "duration": "180 dk",
+                "description": "Küçük, detaylı çizgi çalışması.",
+                "features": [
+                    "Konsültasyon",
+                    "Steril...",
+                    "Bakım",
+                    "Ücretsiz Rötuş"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Orta Boy",
+                "category": "Dövme Uygulamaları",
+                "price": 2000,
+                "duration": "2-3 sa",
+                "description": "Renk veya tek renk.",
+                "features": [
+                    "Tasarım",
+                    "Tek Seans",
+                    "Bakım",
+                    "Rötuş"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Large Piece",
+                "category": "Premium Sanat",
+                "price": 4500,
+                "duration": "4+ sa",
+                "description": "Kol, sırt veya bacak komple.",
+                "features": [
+                    "Özel Tasarım",
+                    "Çoklu Seans",
+                    "Premium Mürekkep",
+                    "Geniş Bakım"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Cover Up",
+                "category": "Restorasyon",
+                "price": 3000,
+                "duration": "3-4 sa",
+                "description": "Eski dövmenin üstünü kapatma.",
+                "features": [
+                    "Analiz",
+                    "Özel Teknik",
+                    "Renk Düzeltme",
+                    "Garanti"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Test Service",
+                "price": 150,
+                "duration": "30 dk",
+                "description": "",
+                "features": []
+            }
+        ]
+    },
+    {
+        "id": "tattoo-masters",
+        "sector_id": "tattoo",
+        "name": "Tattoo Masters",
+        "rating": 4.9,
+        "dashboard_code": "TAT001",
+        "dashboard_password_hash": "09c0b60974d56272b436e27033575f8be1d42cb69cad1745c49c65a1b5bb188a",
+        "services": [
+            {
+                "id": 1,
+                "name": "Mini Dövme",
+                "category": "Dövme Uygulamaları",
+                "price": 3434,
+                "duration": "180 dk",
+                "description": "Küçük, detaylı çizgi çalışması.",
+                "features": [
+                    "Konsültasyon",
+                    "Steril...",
+                    "Bakım",
+                    "Ücretsiz Rötuş"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Orta Boy",
+                "category": "Dövme Uygulamaları",
+                "price": 2000,
+                "duration": "2-3 sa",
+                "description": "Renk veya tek renk.",
+                "features": [
+                    "Tasarım",
+                    "Tek Seans",
+                    "Bakım",
+                    "Rötuş"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Large Piece",
+                "category": "Premium Sanat",
+                "price": 4500,
+                "duration": "4+ sa",
+                "description": "Kol, sırt veya bacak komple.",
+                "features": [
+                    "Özel Tasarım",
+                    "Çoklu Seans",
+                    "Premium Mürekkep",
+                    "Geniş Bakım"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Cover Up",
+                "category": "Restorasyon",
+                "price": 3000,
+                "duration": "3-4 sa",
+                "description": "Eski dövmenin üstünü kapatma.",
+                "features": [
+                    "Analiz",
+                    "Özel Teknik",
+                    "Renk Düzeltme",
+                    "Garanti"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Test Service",
+                "price": 150,
+                "duration": "30 dk",
+                "description": "",
+                "features": []
+            }
+        ]
+    },
+    {
+        "id": "zihin-psikoloji",
+        "sector_id": "psikolog",
+        "name": "Zihin Psikoloji",
+        "rating": 4.7,
+        "dashboard_code": "ZHN001",
+        "dashboard_password_hash": "56ba25b0e178c5d373b2d05b60598bdb377fe1c4185aed0fabf1aee4dfe37f01",
+        "services": [
+            {
+                "id": 1,
+                "name": "İlk Görüşme",
+                "category": "Tanı & Değerlendirme",
+                "price": 2323,
+                "duration": "50 dk",
+                "description": "Tanışma ve değerlendirme seansı.",
+                "features": [
+                    "Ücretsiz Tanışma",
+                    "Anamnez",
+                    "Hedef Belirleme",
+                    "Plan"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Bireysel Terapi",
+                "category": "Psikoterapi",
+                "price": 900,
+                "duration": "50 dk",
+                "description": "Haftalık uzman desteği.",
+                "features": [
+                    "Özel Mekan",
+                    "Yüz Yüze",
+                    "Gizlilik",
+                    "Not Tutma"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Çift Terapisi",
+                "category": "Psikoterapi",
+                "price": 1500,
+                "duration": "90 dk",
+                "description": "İlişki ve evlilik danışmanlığı.",
+                "features": [
+                    "Eşli Katılım",
+                    "Empati Çalışması",
+                    "Çatışma Çözümü",
+                    "Uyum"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "EMDR Terapisi",
+                "category": "Özel Teknikler",
+                "price": 1200,
+                "duration": "60 dk",
+                "description": "Travma odaklı teknik.",
+                "features": [
+                    "Göz Hareketleri",
+                    "Duygusal Boşalım",
+                    "Kalıcı Çözüm",
+                    "Yoğun Seans"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "empati-klinigi",
+        "sector_id": "psikolog",
+        "name": "Empati Kliniği",
+        "rating": 4.9,
+        "dashboard_code": "EMP001",
+        "dashboard_password_hash": "8539bf3157c7f325fa564cdd931ddb998498325346fd9f9f62139d5d7cfd29e7",
+        "services": [
+            {
+                "id": 1,
+                "name": "İlk Görüşme",
+                "category": "Tanı & Değerlendirme",
+                "price": 322344,
+                "duration": "50 dk",
+                "description": "Tanışma ve değerlendirme seansı.",
+                "features": [
+                    "Ücretsiz Tanışma",
+                    "Anamnez",
+                    "Hedef Belirleme",
+                    "Plan"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Bireysel Terapi",
+                "category": "Psikoterapi",
+                "price": 900,
+                "duration": "50 dk",
+                "description": "Haftalık uzman desteği.",
+                "features": [
+                    "Özel Mekan",
+                    "Yüz Yüze",
+                    "Gizlilik",
+                    "Not Tutma"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Çift Terapisi",
+                "category": "Psikoterapi",
+                "price": 1500,
+                "duration": "90 dk",
+                "description": "İlişki ve evlilik danışmanlığı.",
+                "features": [
+                    "Eşli Katılım",
+                    "Empati Çalışması",
+                    "Çatışma Çözümü",
+                    "Uyum"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "EMDR Terapisi",
+                "category": "Özel Teknikler",
+                "price": 1200,
+                "duration": "60 dk",
+                "description": "Travma odaklı teknik.",
+                "features": [
+                    "Göz Hareketleri",
+                    "Duygusal Boşalım",
+                    "Kalıcı Çözüm",
+                    "Yoğun Seans"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "estetik-guzellik",
+        "sector_id": "guzellik",
+        "name": "Estetik Güzellik Merkezi",
+        "rating": 4.8,
+        "dashboard_code": "EST001",
+        "dashboard_password_hash": "c1b4e71473d0dea9d17ab8575a2455c3a161b573763f915d91f28a937c880bb8",
+        "services": [
+            {
+                "id": 1,
+                "name": "Cilt Bakımı",
+                "category": "Yüz & Cilt",
+                "price": 341,
+                "duration": "60 dk",
+                "description": "Derin temizlik ve maske.",
+                "features": [
+                    "Peeling",
+                    "Maske",
+                    "Mesoterapi",
+                    "Masaj"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Lazer Epilasyon",
+                "category": "Vücut Bakımı",
+                "price": 2000,
+                "duration": "45 dk",
+                "description": "Tüm vücut kalıcı çözüm.",
+                "features": [
+                    "Buz Başlık",
+                    "Acısız",
+                    "Garantili",
+                    "Hızlı İşlem"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Kalıcı Makyaj",
+                "category": "Estetik",
+                "price": 1500,
+                "duration": "120 dk",
+                "description": "Microblading ve dudak renklendirme.",
+                "features": [
+                    "Altın Oran",
+                    "Kişiye Özel",
+                    "Doğal Pigment",
+                    "Rötuş"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Bölgesel İncelme",
+                "category": "Vücut Bakımı",
+                "price": 1200,
+                "duration": "40 dk",
+                "description": "Radyofrekans ve kavitasyon.",
+                "features": [
+                    "Sıkılaşma",
+                    "Ölçüm",
+                    "Diyet Desteği",
+                    "Makine Bazlı"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "pure-glow",
+        "sector_id": "guzellik",
+        "name": "Pure Glow Beauty",
+        "rating": 4.6,
+        "dashboard_code": "PGL001",
+        "dashboard_password_hash": "52cb15100bc4f70530e6196b6d3978fcfa287c2977e168a7498b60f980ed7439",
+        "services": [
+            {
+                "id": 1,
+                "name": "Cilt Bakımı",
+                "category": "Yüz & Cilt",
+                "price": 566,
+                "duration": "60 dk",
+                "description": "Derin temizlik ve maske.",
+                "features": [
+                    "Peeling",
+                    "Maske",
+                    "Mesoterapi",
+                    "Masaj"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Lazer Epilasyon",
+                "category": "Vücut Bakımı",
+                "price": 2000,
+                "duration": "45 dk",
+                "description": "Tüm vücut kalıcı çözüm.",
+                "features": [
+                    "Buz Başlık",
+                    "Acısız",
+                    "Garantili",
+                    "Hızlı İşlem"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Kalıcı Makyaj",
+                "category": "Estetik",
+                "price": 1500,
+                "duration": "120 dk",
+                "description": "Microblading ve dudak renklendirme.",
+                "features": [
+                    "Altın Oran",
+                    "Kişiye Özel",
+                    "Doğal Pigment",
+                    "Rötuş"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Bölgesel İncelme",
+                "category": "Vücut Bakımı",
+                "price": 1200,
+                "duration": "40 dk",
+                "description": "Radyofrekans ve kavitasyon.",
+                "features": [
+                    "Sıkılaşma",
+                    "Ölçüm",
+                    "Diyet Desteği",
+                    "Makine Bazlı"
+                ]
+            }
+        ]
+    }
+]

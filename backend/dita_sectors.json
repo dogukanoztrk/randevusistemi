@@ -1,0 +1,229 @@
+[
+    {
+        "id": "tattoo",
+        "name": "Dövme Stüdyosu",
+        "emoji": "🖋️",
+        "tagline": "Sanatı ten üzerine taşı",
+        "theme": {
+            "accent": "#8B5CF6",
+            "accentRgb": "139, 92, 246",
+            "accentDark": "#6D28D9",
+            "accentLight": "#C4B5FD",
+            "bg": "rgba(139, 92, 246, 0.05)",
+            "cardBg": "rgba(139, 92, 246, 0.04)",
+            "name": "Violet"
+        },
+        "services": [
+            {
+                "id": 1,
+                "name": "Mini Dövme",
+                "category": "Dövme Uygulamaları",
+                "price": 800,
+                "duration": "180 dk",
+                "description": "Küçük, detaylı çizgi çalışması.",
+                "features": [
+                    "Konsültasyon",
+                    "Steril...",
+                    "Bakım",
+                    "Ücretsiz Rötuş"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Orta Boy",
+                "category": "Dövme Uygulamaları",
+                "price": 2000,
+                "duration": "2-3 sa",
+                "description": "Renk veya tek renk.",
+                "features": [
+                    "Tasarım",
+                    "Tek Seans",
+                    "Bakım",
+                    "Rötuş"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Large Piece",
+                "category": "Premium Sanat",
+                "price": 4500,
+                "duration": "4+ sa",
+                "description": "Kol, sırt veya bacak komple.",
+                "features": [
+                    "Özel Tasarım",
+                    "Çoklu Seans",
+                    "Premium Mürekkep",
+                    "Geniş Bakım"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Cover Up",
+                "category": "Restorasyon",
+                "price": 3000,
+                "duration": "3-4 sa",
+                "description": "Eski dövmenin üstünü kapatma.",
+                "features": [
+                    "Analiz",
+                    "Özel Teknik",
+                    "Renk Düzeltme",
+                    "Garanti"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Test Service",
+                "price": 150,
+                "duration": "30 dk",
+                "description": "",
+                "features": []
+            }
+        ]
+    },
+    {
+        "id": "psikolog",
+        "name": "Psikolog",
+        "emoji": "🧠",
+        "tagline": "Zihnini keşfet, kendini bul",
+        "theme": {
+            "accent": "#10B981",
+            "accentRgb": "16, 185, 129",
+            "accentDark": "#059669",
+            "accentLight": "#6EE7B7",
+            "bg": "rgba(16, 185, 129, 0.05)",
+            "cardBg": "rgba(16, 185, 129, 0.04)",
+            "name": "Emerald"
+        },
+        "services": [
+            {
+                "id": 1,
+                "name": "İlk Görüşme",
+                "category": "Tanı & Değerlendirme",
+                "price": 344,
+                "duration": "50 dk",
+                "description": "Tanışma ve değerlendirme seansı.",
+                "features": [
+                    "Ücretsiz Tanışma",
+                    "Anamnez",
+                    "Hedef Belirleme",
+                    "Plan"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Bireysel Terapi",
+                "category": "Psikoterapi",
+                "price": 900,
+                "duration": "50 dk",
+                "description": "Haftalık uzman desteği.",
+                "features": [
+                    "Özel Mekan",
+                    "Yüz Yüze",
+                    "Gizlilik",
+                    "Not Tutma"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Çift Terapisi",
+                "category": "Psikoterapi",
+                "price": 1500,
+                "duration": "90 dk",
+                "description": "İlişki ve evlilik danışmanlığı.",
+                "features": [
+                    "Eşli Katılım",
+                    "Empati Çalışması",
+                    "Çatışma Çözümü",
+                    "Uyum"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "EMDR Terapisi",
+                "category": "Özel Teknikler",
+                "price": 1200,
+                "duration": "60 dk",
+                "description": "Travma odaklı teknik.",
+                "features": [
+                    "Göz Hareketleri",
+                    "Duygusal Boşalım",
+                    "Kalıcı Çözüm",
+                    "Yoğun Seans"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "guzellik",
+        "name": "Güzellik Merkezi",
+        "emoji": "✨",
+        "tagline": "Güzelliğini öne çıkar",
+        "theme": {
+            "accent": "#EC4899",
+            "accentRgb": "236, 72, 153",
+            "accentDark": "#BE185D",
+            "accentLight": "#F9A8D4",
+            "bg": "rgba(236, 72, 153, 0.05)",
+            "cardBg": "rgba(236, 72, 153, 0.04)",
+            "name": "Rose"
+        },
+        "services": [
+            {
+                "id": 1,
+                "name": "Cilt Bakımı",
+                "category": "Yüz & Cilt",
+                "price": 233,
+                "duration": "60 dk",
+                "description": "Derin temizlik ve maske.",
+                "features": [
+                    "Peeling",
+                    "Maske",
+                    "Mesoterapi",
+                    "Masaj"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Lazer Epilasyon",
+                "category": "Vücut Bakımı",
+                "price": 2000,
+                "duration": "45 dk",
+                "description": "Tüm vücut kalıcı çözüm.",
+                "features": [
+                    "Buz Başlık",
+                    "Acısız",
+                    "Garantili",
+                    "Hızlı İşlem"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Kalıcı Makyaj",
+                "category": "Estetik",
+                "price": 1500,
+                "duration": "120 dk",
+                "description": "Microblading ve dudak renklendirme.",
+                "features": [
+                    "Altın Oran",
+                    "Kişiye Özel",
+                    "Doğal Pigment",
+                    "Rötuş"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Bölgesel İncelme",
+                "category": "Vücut Bakımı",
+                "price": 1200,
+                "duration": "40 dk",
+                "description": "Radyofrekans ve kavitasyon.",
+                "features": [
+                    "Sıkılaşma",
+                    "Ölçüm",
+                    "Diyet Desteği",
+                    "Makine Bazlı"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+.env
+.env.*
+.git
+.gitignore
+.vscode
+.idea
+start_server.bat
+run_diagnostic.py
+minimal_app.py

@@ -1,0 +1,540 @@
+[
+    {
+        "id": "s1_c1",
+        "name": "Kaan Yılmaz",
+        "title": "Realizm Uzmanı",
+        "avatar": "👨🏻‍🎤",
+        "company_id": "inkart",
+        "service_ids": [
+            1,
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "KAAN01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s2_c1",
+        "name": "Ege Demir",
+        "title": "Minimalist Artist",
+        "avatar": "👨🏼‍🎤",
+        "company_id": "inkart",
+        "service_ids": [
+            1
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "EGE01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s3_c1",
+        "name": "Selin Şahin",
+        "title": "Cover Up Ustası",
+        "avatar": "👩🏻‍🎤",
+        "company_id": "inkart",
+        "service_ids": [
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "SELIN01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s4_c1",
+        "name": "Ceren Ak",
+        "title": "Geleneksel Dövme",
+        "avatar": "👩🏼‍🎤",
+        "company_id": "inkart",
+        "service_ids": [
+            2,
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "CEREN01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1_c2",
+        "name": "Barış Can",
+        "title": "Portre Uzmanı",
+        "avatar": "👨🏻‍🎤",
+        "company_id": "tattoo-masters",
+        "service_ids": [
+            2,
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "BARIŞ01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s2_c2",
+        "name": "Mert Sönmez",
+        "title": "Line Art Artist",
+        "avatar": "👨🏽‍🎤",
+        "company_id": "tattoo-masters",
+        "service_ids": [
+            1,
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "MERT01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s3_c2",
+        "name": "Zeynep Bal",
+        "title": "Büyük Boy Uzmanı",
+        "avatar": "👩🏻‍🎤",
+        "company_id": "tattoo-masters",
+        "service_ids": [
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "ZEYNEP01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s4_c2",
+        "name": "Elif Dağ",
+        "title": "Cover Up Uzmanı",
+        "avatar": "👩🏽‍🎤",
+        "company_id": "tattoo-masters",
+        "service_ids": [
+            2,
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "ELIF01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1_c3",
+        "name": "Dr. Berk Can",
+        "title": "Klinik Psikolog",
+        "avatar": "👨🏻‍⚕️",
+        "company_id": "zihin-psikoloji",
+        "service_ids": [
+            1,
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "DR.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s2_c3",
+        "name": "Psk. Ozan Koç",
+        "title": "Çift Terapisti",
+        "avatar": "👨🏼‍⚕️",
+        "company_id": "zihin-psikoloji",
+        "service_ids": [
+            1,
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "PSK.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s3_c3",
+        "name": "Psk. Melis Kaya",
+        "title": "Bireysel Terapist",
+        "avatar": "👩🏼‍⚕️",
+        "company_id": "zihin-psikoloji",
+        "service_ids": [
+            1,
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "PSK.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s4_c3",
+        "name": "Uzman Psk. Aslı Türk",
+        "title": "EMDR Uzmanı",
+        "avatar": "👩🏻‍⚕️",
+        "company_id": "zihin-psikoloji",
+        "service_ids": [
+            1,
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "UZMAN01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1_c4",
+        "name": "Psk. Caner Aydın",
+        "title": "Travma Uzmanı",
+        "avatar": "👨🏽‍⚕️",
+        "company_id": "empati-klinigi",
+        "service_ids": [
+            1,
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "PSK.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s2_c4",
+        "name": "Psk. Gökhan Erol",
+        "title": "Klinik Terapist",
+        "avatar": "👨🏻‍⚕️",
+        "company_id": "empati-klinigi",
+        "service_ids": [
+            1,
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "PSK.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s3_c4",
+        "name": "Dr. Ece Işık",
+        "title": "Aile ve Çift Terapisti",
+        "avatar": "👩🏻‍⚕️",
+        "company_id": "empati-klinigi",
+        "service_ids": [
+            1,
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "DR.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s4_c4",
+        "name": "Psk. Burcu Çetin",
+        "title": "Bireysel Terapist",
+        "avatar": "👩🏼‍⚕️",
+        "company_id": "empati-klinigi",
+        "service_ids": [
+            1,
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "PSK.01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1_c5",
+        "name": "Ali Korkmaz",
+        "title": "Cilt Bakım Uzmanı",
+        "avatar": "👨🏻‍⚕️",
+        "company_id": "estetik-guzellik",
+        "service_ids": [
+            1
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "ALI01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s2_c5",
+        "name": "Koray Yıldız",
+        "title": "Kalıcı Makyaj",
+        "avatar": "👨🏼‍⚕️",
+        "company_id": "estetik-guzellik",
+        "service_ids": [
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "KORAY01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s3_c5",
+        "name": "Ayşe Hanım",
+        "title": "Lazer Uzmanı",
+        "avatar": "👩🏼‍🦰",
+        "company_id": "estetik-guzellik",
+        "service_ids": [
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "AYŞE01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s4_c5",
+        "name": "Merve Kılıç",
+        "title": "Kavitasyon Uzmanı",
+        "avatar": "👱🏻‍♀️",
+        "company_id": "estetik-guzellik",
+        "service_ids": [
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "MERVE01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1_c6",
+        "name": "Cem Tekin",
+        "title": "Medikal Estetisyen",
+        "avatar": "👨🏽‍⚕️",
+        "company_id": "pure-glow",
+        "service_ids": [
+            1,
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "CEM01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s2_c6",
+        "name": "Sinan Gül",
+        "title": "Lazer & Epilasyon",
+        "avatar": "👨🏻‍⚕️",
+        "company_id": "pure-glow",
+        "service_ids": [
+            2
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "SINAN01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s3_c6",
+        "name": "Buse Çelik",
+        "title": "Cilt Bakım Baş Uzmanı",
+        "avatar": "👩🏻‍🦱",
+        "company_id": "pure-glow",
+        "service_ids": [
+            1,
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "BUSE01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s4_c6",
+        "name": "Gizem Şen",
+        "title": "Zayıflama ve Estetik",
+        "avatar": "👩🏽‍🦳",
+        "company_id": "pure-glow",
+        "service_ids": [
+            2,
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "GIZEM01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1778441667211_temp",
+        "name": "ali çamldal",
+        "title": "Çift terapisti",
+        "avatar": "👤",
+        "company_id": "zihin-psikoloji",
+        "service_ids": [
+            1,
+            3
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        },
+        "staff_code": "ALI01",
+        "password_hash": "bc5f63e9e613d2234d2cf206c6852452ef3d1be8c4daebacd7a6e2a5260869a6"
+    },
+    {
+        "id": "s1779704091326_temp",
+        "name": "Ali Cab",
+        "title": "HERBOKOLOK",
+        "avatar": "👤",
+        "company_id": "pure-glow",
+        "service_ids": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "working_hours": {
+            "startTime": "09:00",
+            "endTime": "18:00"
+        },
+        "breaks": {
+            "startTime": "12:00",
+            "endTime": "13:00"
+        }
+    }
+]

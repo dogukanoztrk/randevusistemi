@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  
+  /* Dark Theme (Default) */
+  --color-bg-app: 10, 10, 10;
+  --color-bg-surface: 17, 17, 17;
+  --color-bg-surface-elevated: 26, 26, 26;
+  --color-bg-surface-active: 42, 42, 42;
+  --color-text-main: 255, 255, 255;
+  --color-text-inverse: 10, 10, 10;
+}
+
+html.light {
+  /* Light Theme */
+  --color-bg-app: 248, 250, 252;
+  --color-bg-surface: 255, 255, 255;
+  --color-bg-surface-elevated: 241, 245, 249;
+  --color-bg-surface-active: 226, 232, 240;
+  --color-text-main: 15, 23, 42;
+  --color-text-inverse: 255, 255, 255;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: rgb(var(--color-bg-app));
+  color: rgb(var(--color-text-main));
+  @apply antialiased selection:bg-[#C5A059]/30 selection:text-white;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.glass-dark {
+  @apply bg-slate-900/70 backdrop-blur-md border border-white/10;
+}
+
+/* Premium Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+}
+
+/* Page Transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
