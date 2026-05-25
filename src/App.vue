@@ -11,6 +11,7 @@ const router = useRouter()
 // Theme & PWA Logic
 const isDark = ref(true)
 const deferredPrompt = ref<any>(null)
+const isMobileMenuOpen = ref(false)
 
 const toggleTheme = () => {
   isDark.value = !isDark.value
@@ -151,12 +152,43 @@ const logoutCustomer = async () => {
             <Sun v-if="isDark" class="w-5 h-5" />
             <Moon v-else class="w-5 h-5" />
           </button>
-          <button class="p-2 text-main/50 hover:text-main transition-colors">
+          <button @click="isMobileMenuOpen = true" class="p-2 text-main/50 hover:text-main transition-colors">
             <MenuIcon class="w-6 h-6" />
           </button>
         </div>
       </div>
     </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <Teleport to="body">
+      <transition name="fade-overlay">
+        <div v-if="isMobileMenuOpen" class="fixed inset-0 z-[200] bg-surface/95 backdrop-blur-xl lg:hidden flex flex-col">
+          <div class="h-20 px-4 md:px-8 flex items-center justify-between border-b border-main/10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-surface-elevated border border-main/10 rounded-xl flex items-center justify-center text-[#C5A059] font-black text-xl">D</div>
+              <span class="font-heading font-black text-2xl tracking-[0.2em] text-main leading-none">DiTA</span>
+            </div>
+            <button @click="isMobileMenuOpen = false" class="p-2 text-main/50 hover:text-main transition-colors bg-surface-elevated rounded-full border border-main/10">
+              <X class="w-6 h-6" />
+            </button>
+          </div>
+          <div class="flex-grow p-6 flex flex-col justify-center items-center gap-8 text-center animate-scale-in">
+            <router-link to="/" @click="isMobileMenuOpen = false" class="text-2xl font-serif text-main hover:text-[#C5A059] transition-colors">Ana Sayfa</router-link>
+            <router-link to="/my-appointments" @click="isMobileMenuOpen = false" class="text-2xl font-serif text-main hover:text-[#C5A059] transition-colors">Randevularım</router-link>
+            <div class="w-12 h-px bg-[#C5A059]/30"></div>
+            <template v-if="store.currentUser">
+              <div class="flex flex-col items-center gap-6">
+                <span class="text-main/50 text-sm">Hoş geldin,<br><span class="text-main font-bold text-xl mt-1 block">{{ store.currentUser.name }}</span></span>
+                <button @click="logoutCustomer(); isMobileMenuOpen = false" class="px-8 py-3 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-rose-500/20 transition-colors">Çıkış Yap</button>
+              </div>
+            </template>
+            <template v-else>
+              <router-link to="/auth" @click="isMobileMenuOpen = false" class="px-10 py-4 bg-[#C5A059] text-[#0a0a0a] rounded-2xl font-black uppercase tracking-widest text-sm shadow-[0_0_20px_rgba(197,160,89,0.3)] hover:scale-105 transition-all">Giriş / Kayıt</router-link>
+            </template>
+          </div>
+        </div>
+      </transition>
+    </Teleport>
 
     <!-- Main Content -->
     <main class="flex-grow relative z-10">
